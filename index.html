@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SafaiBook — collection-fee book for door-to-door waste collectors</title>
+  <meta name="description" content="Track monthly waste-collection dues by route, send staged WhatsApp reminders and issue numbered digital receipts. Built for private door-to-door garbage collection operators in India — book a discovery call." />
+  <meta name="keywords" content="waste collection fee app, garbage collection billing, door-to-door waste dues, collection reminder, digital receipt, sanitation worker route management India" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <link rel="canonical" href="https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/" />
+  <meta name="theme-color" content="#16a34a" />
+  <meta name="author" content="KARYA" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KARYA" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="SafaiBook — collection-fee book for door-to-door waste collectors" />
+  <meta property="og:description" content="Track monthly waste-collection dues by route, send staged WhatsApp reminders and issue numbered digital receipts. Built for private door-to-door garbage collection operators in India — book a discovery call." />
+  <meta property="og:url" content="https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/" />
+  <meta property="og:image" content="https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="SafaiBook — waste-collection dues, WhatsApp reminders and numbered digital receipts on autopilot for Indian door-to-door collection operators." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SafaiBook — collection-fee book for door-to-door waste collectors" />
+  <meta name="twitter:description" content="Track monthly waste-collection dues by route, send staged WhatsApp reminders and issue numbered digital receipts. Built for private door-to-door garbage collection operators in India — book a discovery call." />
+  <meta name="twitter:image" content="https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/og.png" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/og.png" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kaarya-bench.pages.dev/#org",
+        "name": "KARYA",
+        "url": "https://kaarya-bench.pages.dev/",
+        "email": "sreeni.nintendo@gmail.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/#website",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/",
+        "name": "SafaiBook",
+        "inLanguage": "en-IN",
+        "publisher": { "@id": "https://kaarya-bench.pages.dev/#org" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "SafaiBook",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/",
+        "image": "https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/og.png",
+        "description": "A monthly collection-fee book for private door-to-door waste collection operators in India — a fixed monthly cycle across routes with staged WhatsApp reminders, numbered digital receipts, an arrears roll-up and a collected-vs-pending dashboard by route.",
+        "inLanguage": ["en-IN", "hi-IN"],
+        "areaServed": { "@type": "Country", "name": "India" },
+        "audience": { "@type": "BusinessAudience" },
+        "provider": { "@type": "Organization", "name": "KARYA" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "description": "Subscription — pricing shared on a discovery call"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does it actually send messages, or just remind me to?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SafaiBook drafts each reminder — personalised, with the household name, route, month and balance — and stages it in your outbox on schedule. You send from your own number with a tap, so it always looks like it came from you, not a robot. And it never double-sends the same stage to the same home."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Households pay by cash and UPI. Does that work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Mark a cash payment as received and the due clears and a numbered receipt goes out, same as UPI. SafaiBook tracks each home's balance — it doesn't force a single payment rail on the colony."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I run three collectors across a few colonies. Can I see it by route?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "That's the core view. Every household sits on a route with a worker, and the dashboard shows collection percentage route by route — so you know which lane your collector still needs to work before month-end."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does it cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first operators."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "KARYA · On the Bench",
+            "item": "https://kaarya-bench.pages.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SafaiBook",
+            "item": "https://sreenivas-sadhu-prabhakara.github.io/safaibook-site/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="SafaiBook home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" role="img" aria-label="SafaiBook logo">
+            <rect x="3" y="4" width="26" height="24" rx="3" fill="#16A34A"/>
+            <rect x="3" y="4" width="7" height="24" rx="3" fill="#0F7C38"/>
+            <path d="M14 10h11M14 16h11M14 22h7" stroke="#F5F6F1" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">Safai<span class="brand__book">Book</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#problem">The problem</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a href="mailto:sreeni.nintendo@gmail.com?subject=Discovery%20call%20—%20SafaiBook" class="btn btn--sm">Book a discovery call</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Waste-collection dues, on autopilot</p>
+          <h1 class="hero__title" id="hero-title">The collection fee<br /><span class="accent-word">that collects itself.</span></h1>
+          <p class="hero__pain">
+            Every month you walk the lanes, tick a paper diary, and try to
+            remember which homes still owe. SafaiBook runs that whole cycle for
+            you — dues by route, WhatsApp reminders, numbered receipts — the day
+            the fee is due.
+          </p>
+          <div class="hero__cta">
+            <a href="#pricing" class="btn btn--lg">Collect this month's fees &rarr;</a>
+            <a href="#how" class="btn-link">See how it works</a>
+          </div>
+          <p class="hero__note"><span class="dot"></span>For private door-to-door collection operators · subscription · pricing on discovery</p>
+        </div>
+
+        <!-- SIGNATURE WIDGET: live collection register -->
+        <aside class="register" aria-label="Live collection register demo">
+          <div class="register__head">
+            <div>
+              <p class="register__label">Collection register</p>
+              <p class="register__month" id="reg-month">July 2026</p>
+            </div>
+            <span class="register__pill">Auto-run</span>
+          </div>
+          <ul class="register__rows" id="reg-rows">
+            <li class="reg-row" data-state="paid">
+              <span class="reg-row__name">Kamala Devi <em>· Gandhi Nagar · Ravi's route</em></span>
+              <span class="reg-row__amt">Rs 120</span>
+              <span class="reg-row__tag tag--paid">Paid</span>
+            </li>
+            <li class="reg-row" data-state="due">
+              <span class="reg-row__name">Iqbal Sheikh <em>· Nehru Colony · Sunita's route</em></span>
+              <span class="reg-row__amt">Rs 100</span>
+              <span class="reg-row__tag tag--due" id="reg-live-tag">Reminder sent</span>
+            </li>
+            <li class="reg-row" data-state="overdue">
+              <span class="reg-row__name">Lakshmi Rao <em>· Subhash Ward · Ravi's route</em></span>
+              <span class="reg-row__amt">Rs 150</span>
+              <span class="reg-row__tag tag--over">4 days overdue</span>
+            </li>
+          </ul>
+          <div class="register__foot">
+            <div class="regstat">
+              <span class="regstat__label">Collected</span>
+              <span class="regstat__val regstat__val--in" id="reg-collected">Rs 220</span>
+            </div>
+            <div class="regstat">
+              <span class="regstat__label">Pending</span>
+              <span class="regstat__val regstat__val--out" id="reg-pending">Rs 250</span>
+            </div>
+          </div>
+          <p class="register__caption" id="reg-caption">Iqbal pays on UPI &rarr; receipt SB-2607-018 goes out automatically.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section" id="problem" aria-label="The problem">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">01 · The problem</p>
+        <div class="two-col">
+          <h2 class="section__title">You run the routes.<br />The chasing runs your month.</h2>
+          <div class="prose">
+            <p>
+              If you collect from three hundred homes across a few colonies with two
+              or three collectors, nobody handed you an accounts department. Your
+              system is a <strong>paper diary, a bundle of loose receipts, and your
+              own memory</strong> — and all three quietly break down.
+            </p>
+          </div>
+        </div>
+
+        <div class="pain-grid">
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">📓</span>
+            <h3>The diary can't tell you who's behind</h3>
+            <p>By the 15th you're flipping pages to reconstruct which homes on which lane still owe. Some get asked twice, some never get asked at all.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">🚶</span>
+            <h3>The collector re-walks lanes for nothing</h3>
+            <p>Without a route-by-route collection view, your worker knocks on doors that already paid and skips ones that didn't. Time and diesel, gone.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">🧾</span>
+            <h3>"Bhaiya, receipt do na"</h3>
+            <p>Homes that paid want proof. You're tearing a slip from a book or promising a receipt later — and later never quite comes, so disputes linger.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">💸</span>
+            <h3>Small dues leak into real money</h3>
+            <p>Rs 100 a home feels trivial to chase — until forty homes carry two months of arrears and it's the collector's whole salary sitting uncollected.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSIGHT ============ -->
+    <section class="insight" id="insight" aria-label="The insight">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light">02 · The insight</p>
+        <blockquote class="insight__quote">
+          The collection fee is the most <span class="hl">predictable</span>
+          recurring payment there is — same homes, same amount, same day — yet
+          it's still chased <span class="hl">on foot</span>, lane by lane, from a
+          diary.
+        </blockquote>
+        <p class="insight__punch">
+          SafaiBook's whole job is to close that gap: take a thing that repeats
+          perfectly and let it run as a cycle — <strong>generate the dues, send the
+          reminders, issue the receipt</strong> — so collection happens whether or
+          not you remembered to start it.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how" aria-label="How it works">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">03 · How it works</p>
+        <h2 class="section__title">Set it up once. Then every month runs itself.</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n">1</span>
+            <div>
+              <h3>Register homes across your routes</h3>
+              <p>Each route has a worker; each home gets its monthly fee and due day. Enter it once — that's the whole setup for a full colony.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">2</span>
+            <div>
+              <h3>On the due day, invoices generate</h3>
+              <p>SafaiBook raises one collection invoice per active household and rolls any carried-forward arrears into each home's balance. Re-running never duplicates.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">3</span>
+            <div>
+              <h3>Staged reminders go out on WhatsApp</h3>
+              <p>A nudge 3 days before, a note on the due day, a firmer one if it goes overdue — each drafted to the household, deduped so no home is ever pinged twice for the same stage.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">4</span>
+            <div>
+              <h3>Payment clears, numbered receipt goes back</h3>
+              <p>Record cash or UPI and the due clears while a numbered digital receipt is issued automatically. Your dashboard always shows collected vs pending, by route.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section section--tint" id="features" aria-label="What's inside">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">04 · What's inside</p>
+        <h2 class="section__title">The month's whole collection engine, in one book.</h2>
+
+        <div class="feat-grid">
+          <article class="feat">
+            <h3>Household register by route</h3>
+            <p>Every home sits on a route with a named collector, its monthly fee and due day. The register is the backbone of the whole cycle.</p>
+          </article>
+          <article class="feat">
+            <h3>Monthly collection cycle</h3>
+            <p>One invoice per active household, raised automatically on its due day. Set the day once; it repeats forever, and re-running never duplicates.</p>
+          </article>
+          <article class="feat">
+            <h3>Dues &amp; arrears roll-up</h3>
+            <p>Every home carries a running balance — this month plus anything unpaid before it. No margin notes in a diary to reconcile.</p>
+          </article>
+          <article class="feat">
+            <h3>Staged WhatsApp reminders</h3>
+            <p>T-3 days, due day, and overdue nudges written to your outbox — polite, personal, and never sent twice to the same home for the same stage.</p>
+          </article>
+          <article class="feat">
+            <h3>Numbered digital receipts</h3>
+            <p>The moment a cash or UPI payment lands, the household gets a clean, numbered receipt with the home, route, month and amount. Proof, handled.</p>
+          </article>
+          <article class="feat">
+            <h3>Collection % by route</h3>
+            <p>See each route's collected-vs-pending at a glance, so your collector works the lanes still owing instead of re-walking ones already paid.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT PREVIEW ============ -->
+    <section class="section" id="preview" aria-label="The dashboard">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">05 · The dashboard</p>
+        <h2 class="section__title">Open it on the 1st. See every route in ten seconds.</h2>
+
+        <div class="screen" role="img" aria-label="SafaiBook dashboard preview showing collected 18,240 rupees and pending 4,760 rupees for July 2026, with an arrears list of four households across routes.">
+          <!-- browser chrome -->
+          <div class="screen__bar">
+            <span class="screen__dot"></span><span class="screen__dot"></span><span class="screen__dot"></span>
+            <span class="screen__url">app.safaibook.in / Green Colony Sanitation</span>
+          </div>
+
+          <div class="screen__body">
+            <div class="screen__topline">
+              <div>
+                <p class="screen__hello">Namaste, Deepak ji</p>
+                <p class="screen__sub">Green Colony Sanitation · 3 routes · 24 homes · July 2026</p>
+              </div>
+              <span class="screen__tag">Cycle run &middot; 01 Jul</span>
+            </div>
+
+            <!-- KPI cards -->
+            <div class="kpis">
+              <div class="kpi kpi--in">
+                <p class="kpi__label">Collected this month</p>
+                <p class="kpi__val">Rs 18,240</p>
+                <div class="kpi__bar"><span style="width:79%"></span></div>
+                <p class="kpi__meta">19 of 24 homes paid</p>
+              </div>
+              <div class="kpi kpi--out">
+                <p class="kpi__label">Pending</p>
+                <p class="kpi__val">Rs 4,760</p>
+                <div class="kpi__bar kpi__bar--out"><span style="width:21%"></span></div>
+                <p class="kpi__meta">5 homes · 2 overdue</p>
+              </div>
+              <div class="kpi kpi--flat">
+                <p class="kpi__label">Receipts issued</p>
+                <p class="kpi__val">19</p>
+                <p class="kpi__meta">Latest · SB-2607-019</p>
+              </div>
+            </div>
+
+            <!-- arrears table -->
+            <div class="tablecard">
+              <div class="tablecard__head">
+                <p>Arrears &amp; dues</p>
+                <span class="tablecard__hint">reminders auto-staged</span>
+              </div>
+              <div class="tablescroll">
+                <table class="dtable">
+                  <thead>
+                    <tr>
+                      <th>Household</th><th>Route</th><th class="num">Fee</th><th class="num">Balance</th><th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Kamala Devi</td><td>Gandhi Nagar</td>
+                      <td class="num">120</td><td class="num">0</td>
+                      <td><span class="s s--paid">Paid · SB-2607-004</span></td>
+                    </tr>
+                    <tr>
+                      <td>Iqbal Sheikh</td><td>Nehru Colony</td>
+                      <td class="num">100</td><td class="num">100</td>
+                      <td><span class="s s--due">Reminder T-0</span></td>
+                    </tr>
+                    <tr>
+                      <td>Anthony Fernandes</td><td>Nehru Colony</td>
+                      <td class="num">100</td><td class="num">100</td>
+                      <td><span class="s s--due">Reminder T-3</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lakshmi Rao</td><td>Subhash Ward</td>
+                      <td class="num">150</td><td class="num">300</td>
+                      <td><span class="s s--over">4 days overdue</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section section--tint" id="pricing" aria-label="Pricing">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">06 · Pricing</p>
+        <div class="price-wrap">
+          <div class="price-copy">
+            <h2 class="section__title">Simple subscription. However many homes you serve.</h2>
+            <p class="prose">
+              If SafaiBook recovers <strong>a handful of missed fees a month</strong>
+              that would otherwise have slipped through the diary, it's already paid
+              for itself many times over — and you've bought back the hours your
+              collector spends re-walking lanes.
+            </p>
+            <ul class="price-includes">
+              <li>Unlimited routes &amp; households</li>
+              <li>Auto collection cycle + staged WhatsApp reminders</li>
+              <li>Numbered digital receipts + arrears roll-up</li>
+              <li>Collected-vs-pending dashboard &amp; collection % by route</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <p class="price-card__eyebrow">SafaiBook</p>
+            <p class="price-card__amt" style="font-size:34px;">Pricing — on discovery</p>
+            <p class="price-card__line">Subscription basis</p>
+            <p class="prose" style="color:color-mix(in srgb, var(--paper) 82%, transparent);margin:0 0 22px;">
+              We set pricing on a short discovery call and bill it as a simple monthly
+              subscription — sized to how many homes you serve. Early operators get founder terms.
+            </p>
+            <a href="mailto:sreeni.nintendo@gmail.com?subject=Discovery%20call%20—%20SafaiBook" class="btn btn--lg btn--block">Book a discovery call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO + FAQ ============ -->
+    <section class="section" id="faq" aria-label="Who it's for and frequently asked questions">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">07 · Who it's for &amp; questions</p>
+        <div class="who-grid">
+          <div class="who">
+            <h2 class="section__title section__title--sm">Built for the private collection operator, not the municipal corporation.</h2>
+            <p class="prose">
+              SafaiBook is for the person who runs <strong>door-to-door waste
+              collection as a small business</strong> — two or three collectors,
+              a few colonies, Rs 80–150 a home each month. Big enough that chasing
+              the fee eats your month; small enough that municipal ERP software is
+              overkill and out of reach. If you're running it on a paper diary
+              today, this is for you.
+            </p>
+            <div class="who-tags">
+              <span>Private collection operators</span>
+              <span>RWA-appointed collectors</span>
+              <span>Sanitation contractors</span>
+              <span>2–3 collectors · a few colonies</span>
+            </div>
+          </div>
+
+          <div class="faq">
+            <details open>
+              <summary>Does it actually send messages, or just remind me to?</summary>
+              <p>SafaiBook drafts each reminder — personalised, with the household name, route, month and balance — and stages it in your outbox on schedule. You send from your own number with a tap, so it always looks like it came from you, not a robot. And it never double-sends the same stage to the same home.</p>
+            </details>
+            <details>
+              <summary>Households pay by cash and UPI. Does that work?</summary>
+              <p>Yes. Mark a cash payment as received and the due clears and a numbered receipt goes out, same as UPI. SafaiBook tracks each home's balance — it doesn't force a single payment rail on the colony.</p>
+            </details>
+            <details>
+              <summary>I run three collectors across a few colonies. Can I see it by route?</summary>
+              <p>That's the core view. Every household sits on a route with a worker, and the dashboard shows collection percentage route by route — so you know which lane your collector still needs to work before month-end.</p>
+            </details>
+            <details>
+              <summary>What does it cost?</summary>
+              <p>Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first operators.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" role="img" aria-label="SafaiBook logo">
+              <rect x="3" y="4" width="26" height="24" rx="3" fill="#16A34A"/>
+              <rect x="3" y="4" width="7" height="24" rx="3" fill="#0F7C38"/>
+              <path d="M14 10h11M14 16h11M14 22h7" stroke="#F5F6F1" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand__name">Safai<span class="brand__book">Book</span></span>
+        </span>
+        <p class="footer__tag">The collection fee that collects itself.</p>
+      </div>
+      <div class="footer__meta">
+        <p class="footer__studio">A <strong>KARYA</strong> studio build</p>
+        <a class="footer__mail" href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a>
+        <p class="footer__fine">© 2026 SafaiBook · Made in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
